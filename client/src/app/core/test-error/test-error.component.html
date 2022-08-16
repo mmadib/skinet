@@ -15,3 +15,8 @@
     Test 500 Error
   </button>
 </div>
+<div class="row mt-5" *ngIf="validationErrors">
+  <ul class="text-danger">
+    <li *ngFor="let error of validationErrors">{{ error }}</li>
+  </ul>
+</div>
